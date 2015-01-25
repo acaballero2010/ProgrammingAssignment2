@@ -4,8 +4,11 @@
 ## We need to right a pair of functions that cache the inverse of a matrix
 
 ## makeCacheMatrix(), this function creates a special "matrix" object that can cache its inverse
+# makeCacheMatrix is function that has an argument of 'x = matrix()'
 makeCacheMatrix <- function(x = matrix()) {
-                      m <- NULL
+                      m <- NULL  # Initializing variable 'm' with a value of NULL
+                      
+                      # Setting variable 'set' to take a function of 'y'
                       set <- function(y) {
                         x <<- y
                         m <<- NULL
